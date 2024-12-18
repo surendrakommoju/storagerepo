@@ -1,0 +1,16 @@
+ContainerLogV2
+|where ContainerName !="marketing-content"
+|where  LogMessage !has "Error writing to stream"
+|project TimeGenerated,LogMessage,LogSource
+//|where LogMessage !has "styles"
+
+
+
+**Overview**  **Application Name:** Caremark Prod  
+**Company Name:** Wipro
+**Monitoring:** VMS
+  ***SLA Objectives***
+
+- **System Availability:** 99.99%
+- **Response Time:** < 4 seconds
+- **Mean Response Time:** <3 seconds
